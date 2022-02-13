@@ -1,0 +1,44 @@
+.btn {
+    font-family: "Montserrat Alternates";
+    font-size: 1rem;
+    position: relative;
+    padding: 10px 50px 10px 0;
+    display: inline-block;
+    cursor: pointer;
+
+    transition: .3s padding;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background-color: var(--light-red);
+        border-radius: 100px;
+        z-index: -1;
+
+        transition: .3s;
+    }
+    &:after {
+        content: "→";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-55%);
+        font-size: 1.5rem;
+
+        transition: .3s;
+    }
+    &:hover:before {
+        right: -5px;
+    }
+    &:hover:after {
+        right: 5px;
+    }
+    &:hover {
+        padding-left: 5px;
+    }
+}

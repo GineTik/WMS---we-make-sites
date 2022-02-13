@@ -1,0 +1,34 @@
+.title {
+    font-family: "Montserrat Alternates";
+    font-weight: 900;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    font-family: "Montserrat Alternates";
+    color: var(--dark-red);
+}
+
+.present-page__subtitle {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 55px;
+}
+
+.text {
+    line-height: 1.4rem;
+}
+
+.present-page__text {
+    margin-bottom: 50px;
+    max-width: 450px;
+}

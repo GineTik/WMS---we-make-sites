@@ -1,0 +1,32 @@
+.services__list {
+    display: flex;
+    justify-content: start;
+    align-items: top;
+    margin-top: 70px;
+}
+
+.services__item {
+    min-width: 360px;
+    
+    &:not(:last-child) {
+        margin-right: 100px;
+    }
+}
+
+.service__image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 110px;
+    border-bottom-right-radius: 120px;
+}
+
+.service__image, .service__title, .service__text {
+    margin-bottom: 20px;
+}
+
+.services__image {
+    margin-right: -110px;
+    height: 235px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
