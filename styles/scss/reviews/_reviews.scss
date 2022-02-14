@@ -1,0 +1,24 @@
+.reviews {
+    &__list {
+        margin-top: 50px;
+    }
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+        background-color: var(--light-gray);
+        border-radius: 500px;
+        width: 500px;
+    }
+    &__image {
+        width: 130px;
+        height: 130px;
+        border-radius: 500px;
+    }
+    &__right-side {
+        padding: 0 40px;        
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+}

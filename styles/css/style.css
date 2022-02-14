@@ -142,7 +142,7 @@ table {
   padding: 10px 50px 10px 0;
   display: inline-block;
   cursor: pointer;
-  transition: 0.3s padding;
+  transition: 0.3s margin-right, 0.3s padding;
 }
 .btn:before {
   content: "";
@@ -154,7 +154,7 @@ table {
   height: 30px;
   background-color: var(--light-red);
   border-radius: 100px;
-  z-index: -1;
+  z-index: 0;
   transition: 0.3s;
 }
 .btn:after {
@@ -174,6 +174,7 @@ table {
 }
 .btn:hover {
   padding-left: 5px;
+  margin-right: -5px;
 }
 
 .main__present-page {
@@ -327,17 +328,79 @@ h3 {
   opacity: 1;
 }
 
-.skills__description__item {
+.description__item {
   overflow: hidden;
   height: 0;
   opacity: 0;
-  transition: 0.2s opacity 0s, 0s display 0.2s;
+  transition: 0.3s opacity 0s, 0s display 0.3s;
 }
-.skills__description__item--active {
+.description__item--active {
   height: auto;
   opacity: 1;
-  transition: 0.2s opacity 0s, 0.2s display 0s;
+  transition: 0.3s opacity 0s, 0.3s display 0s;
 }
-.skills__description .skills__description-title {
+.description__title {
   margin-bottom: 20px;
+}
+
+.reviews__list {
+  margin-top: 50px;
+}
+.reviews__item {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--light-gray);
+  border-radius: 500px;
+  width: 500px;
+}
+.reviews__image {
+  width: 130px;
+  height: 130px;
+  border-radius: 500px;
+}
+.reviews__right-side {
+  padding: 0 40px;
+}
+.reviews__title {
+  margin-bottom: 10px;
+}
+
+.portfolio__list {
+  margin: -10px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio__item {
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  cursor: pointer;
+}
+.portfolio__item:hover .portfolio__content {
+  opacity: 1;
+}
+.portfolio__content {
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.footer {
+  background-color: var(--light-gray);
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__footer {
+  margin-top: 200px;
+  margin-bottom: 30px;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

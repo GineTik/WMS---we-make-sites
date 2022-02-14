@@ -6,7 +6,7 @@
     display: inline-block;
     cursor: pointer;
 
-    transition: .3s padding;
+    transition: .3s margin-right, .3s padding;
 
     &:before {
         content: "";
@@ -18,7 +18,7 @@
         height: 30px;
         background-color: var(--light-red);
         border-radius: 100px;
-        z-index: -1;
+        z-index: 0;
 
         transition: .3s;
     }
@@ -40,5 +40,6 @@
     }
     &:hover {
         padding-left: 5px;
+        margin-right: -5px;
     }
 }

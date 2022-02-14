@@ -10,14 +10,13 @@ selected.addClass("skill--selected");
 
 let descriptions = $(".skills__description").children();
 let selected__description = descriptions.first();
-selected__description.addClass("skills__description__item--active")
+selected__description.addClass("description__item--active")
 
 skills.mouseenter(function() {
     selected.removeClass("skill--selected");
     $(this).addClass("skill--selected");
     selected = $(this);
-    selected__description.removeClass("skills__description__item--active")
-    selected__description = $(`.skills__description__item--content--${$(this).find(".skill__lang").text().toLowerCase()}`);
-    console.log(selected__description);
-    selected__description.addClass("skills__description__item--active");
+    selected__description.removeClass("description__item--active")
+    selected__description = $(`.description__item--content--${$(this).find(".skill__lang").text().toLowerCase()}`);
+    selected__description.addClass("description__item--active");
 });

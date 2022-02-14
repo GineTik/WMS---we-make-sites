@@ -62,23 +62,22 @@
 	}
 }
 
-
-.skills__description {
+$time_anim: .3s;
+.description {
 	&__item {
 		overflow: hidden;
 		height: 0;
 		opacity: 0;
-		transition: .2s opacity .0s, .0s display .2s;
+		transition: $time_anim opacity .0s, .0s display $time_anim;
 
 		&--active {
 			height: auto;
 			opacity: 1;
-			transition: .2s opacity .0s, .2s display .0s;
+			transition: $time_anim opacity .0s, $time_anim display .0s;
 		}
 	}
-	.skills__description-title {
+	&__title {
 		margin-bottom: 20px;
 	}
-
 }
 
