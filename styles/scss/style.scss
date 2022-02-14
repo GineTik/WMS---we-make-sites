@@ -4,8 +4,9 @@
 @import "_reset.scss";
 
 :root {
-    --light-gray: #f9f9f9;
     --dark: #000;
+    --dark-gray: #444444;
+    --light-gray: #f9f9f9;
     --dark-red: #7B5B5B;
     --light-red: #FFDFDF;
 }
@@ -38,3 +39,4 @@
 @import "main/main";
 @import "text/text";
 @import "service/service";
+@import "skill/skill";
