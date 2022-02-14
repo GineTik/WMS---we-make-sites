@@ -81,3 +81,12 @@ $time_anim: .3s;
 	}
 }
 
+@media (max-width: 850px) {
+	.skills__inner {
+		flex-wrap: wrap;
+		.skills__description {
+			margin-top: 50px;
+			width: 70%;
+		}
+	}
+}

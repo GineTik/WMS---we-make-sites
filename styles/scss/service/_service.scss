@@ -3,9 +3,12 @@
     justify-content: start;
     align-items: top;
     margin-top: 70px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .services__item {
+    width: 360px;
     min-width: 360px;
     
     &:not(:last-child) {
@@ -31,8 +34,26 @@
     margin-left: 10px;
 }
 
+/* хром, сафари */
+.services__list::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.services__list { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.services__list { overflow: -moz-scrollbars-none; }
+
 @media (max-width: 1100px) {
     .services__image {
         display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    .services__list {
+        overflow-x: auto;
+    }
+	.services__item:not(:last-child) {
+        margin-right: 50px;
     }
 }

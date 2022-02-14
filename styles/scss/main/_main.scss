@@ -1,3 +1,7 @@
+.main {
+    padding: 0 10px;
+}
+
 .main__present-page {
     margin: 30px 0;
     display: flex;
@@ -22,5 +26,11 @@ section {
     }
     section {
         margin-top: 140px;
+    }
+}
+
+@media (max-width: 900px) {
+    .present-page__image {
+        display: none;
     }
 }
