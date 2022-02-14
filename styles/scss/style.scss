@@ -32,6 +32,15 @@
     align-items: center;
 }
 
+@media (max-width: 1100px) {
+    .container {
+        max-width: 800px;
+    }
+    html {
+        font-size: 14px;
+    }
+}
+
 @import "header/_header.scss";
 @import "header/navbar";
 @import "logo/_logo.scss";

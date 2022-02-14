@@ -75,6 +75,15 @@ table {
   align-items: center;
 }
 
+@media (max-width: 1100px) {
+  .container {
+    max-width: 800px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
 .header {
   background-color: var(--light-gray);
 }
@@ -102,6 +111,7 @@ table {
   text-decoration: none;
   font-size: 1rem;
   position: relative;
+  cursor: pointer;
 }
 .link:before, .link:after {
   content: "";
@@ -166,15 +176,32 @@ table {
   font-size: 1.5rem;
   transition: 0.3s;
 }
-.btn:hover:before {
+.btn:not(.btn--arrow--up):hover:before {
   right: -5px;
 }
-.btn:hover:after {
+.btn:not(.btn--arrow--up):hover:after {
   right: 5px;
 }
-.btn:hover {
+.btn:not(.btn--arrow--up):hover {
   padding-left: 5px;
   margin-right: -5px;
+}
+.btn--arrow--up:before {
+  top: 50%;
+}
+.btn--arrow--up:after {
+  transform: rotate(-90deg);
+  right: 5px;
+}
+.btn--arrow--up:hover:before {
+  top: 30%;
+}
+.btn--arrow--up:hover:after {
+  top: 15%;
+}
+.btn--arrow--up:hover {
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 .main__present-page {
@@ -185,7 +212,7 @@ table {
 }
 
 .present-page__right-side {
-  min-width: 400px;
+  width: 400px;
 }
 
 .present-page__image {
@@ -196,6 +223,15 @@ section {
   margin-top: 160px;
 }
 
+@media (max-width: 1100px) {
+  .present-page__right-side {
+    width: 300px;
+  }
+
+  section {
+    margin-top: 140px;
+  }
+}
 .title {
   font-family: "Montserrat Alternates";
   font-weight: 900;
@@ -267,6 +303,11 @@ h3 {
   margin-left: 10px;
 }
 
+@media (max-width: 1100px) {
+  .services__image {
+    display: none;
+  }
+}
 .skills__inner {
   margin-top: 65px;
   display: flex;
