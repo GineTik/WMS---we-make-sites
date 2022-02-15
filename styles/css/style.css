@@ -67,6 +67,7 @@ table {
   width: 100%;
   max-width: 1000px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .header__container {
@@ -77,11 +78,20 @@ table {
 
 @media (max-width: 1100px) {
   .container {
-    max-width: 800px;
+    max-width: 870px;
   }
 
   html {
     font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+
+  html {
+    font-size: 12px;
   }
 }
 .header {
@@ -90,10 +100,15 @@ table {
 
 .page__header {
   margin-top: 30px;
-  padding: 15px 10px;
+  padding: 15px 0px;
   width: 100%;
 }
 
+@media (max-width: 700px) {
+  .header__navbar {
+    display: none !important;
+  }
+}
 .logo__title {
   font-weight: 700;
   font-size: 2rem;
@@ -204,10 +219,6 @@ table {
   padding-bottom: 15px;
 }
 
-.main {
-  padding: 0 10px;
-}
-
 .main__present-page {
   margin: 30px 0;
   display: flex;
@@ -239,6 +250,11 @@ section {
 @media (max-width: 900px) {
   .present-page__image {
     display: none;
+  }
+}
+@media (max-width: 700px) {
+  .present-page__left-side {
+    min-width: 100%;
   }
 }
 .title {
@@ -280,13 +296,24 @@ h3 {
   max-width: 450px;
 }
 
+@media (max-width: 700px) {
+  .text {
+    font-size: 1.2rem;
+  }
+}
 .services__list {
   display: flex;
   justify-content: start;
   align-items: top;
-  margin-top: 70px;
   width: 100%;
   max-width: 100%;
+}
+
+.services__button {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services__item {
@@ -302,6 +329,8 @@ h3 {
   height: 200px;
   border-top-left-radius: 110px;
   border-bottom-right-radius: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .service__image, .service__title, .service__text {
@@ -342,6 +371,26 @@ h3 {
 
   .services__item:not(:last-child) {
     margin-right: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .services__item {
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  .service__image {
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 100px;
+  }
+}
+@media (min-width: 700px) {
+  .services__button {
+    display: none;
+  }
+
+  .services__list {
+    margin-top: 60px;
   }
 }
 .skills__inner {
@@ -424,9 +473,32 @@ h3 {
   .skills__inner {
     flex-wrap: wrap;
   }
-  .skills__inner .skills__description {
+
+  .skills__description {
     margin-top: 50px;
     width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .skills__inner {
+    margin-top: 20px;
+  }
+
+  .skills__list {
+    overflow: auto;
+    width: calc(100% + 40px);
+    min-width: calc(100% + 40px);
+    padding-top: 70px;
+    padding-left: 40px;
+    margin-left: -40px;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .skills__description {
+    width: 100%;
   }
 }
 .reviews__list {
@@ -437,7 +509,7 @@ h3 {
   align-items: center;
   padding: 5px;
   background-color: var(--light-gray);
-  border-radius: 500px;
+  border-radius: 65px;
   width: 500px;
 }
 .reviews__image {
@@ -452,6 +524,24 @@ h3 {
   margin-bottom: 10px;
 }
 
+@media (max-width: 700px) {
+  .reviews__item {
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  .reviews__image {
+    margin-top: -65px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .reviews__right-side {
+    margin-top: -65px;
+    padding: 40px 20px 40px 20px;
+    z-index: 1;
+  }
+}
 .portfolio__list {
   margin: -10px;
   margin-top: 40px;
@@ -489,4 +579,15 @@ h3 {
   margin-top: 200px;
   margin-bottom: 30px;
   padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer__container > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -2,9 +2,15 @@
     display: flex;
     justify-content: start;
     align-items: top;
-    margin-top: 70px;
     width: 100%;
     max-width: 100%;
+}
+
+.services__button {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .services__item {
@@ -21,6 +27,7 @@
     height: 200px;
     border-top-left-radius: 110px;
     border-bottom-right-radius: 120px;
+    object-fit: cover;
 }
 
 .service__image, .service__title, .service__text {
@@ -55,5 +62,25 @@
     }
 	.services__item:not(:last-child) {
         margin-right: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .services__item {
+        max-width: 300px;
+        min-width: 300px;
+    }
+    .service__image { 
+        border-top-left-radius: 90px;
+        border-bottom-right-radius: 100px;
+    }
+}
+
+@media (min-width: 700px) {
+    .services__button {
+        display: none;
+    }
+    .services__list {
+        margin-top: 60px;
     }
 }

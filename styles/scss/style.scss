@@ -24,6 +24,7 @@
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    padding: 0 20px;
 }
 
 .header__container {
@@ -34,10 +35,19 @@
 
 @media (max-width: 1100px) {
     .container {
-        max-width: 800px;
+        max-width: 870px;
     }
     html {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 600px;
+    }
+    html {
+        font-size: 12px;
     }
 }
 

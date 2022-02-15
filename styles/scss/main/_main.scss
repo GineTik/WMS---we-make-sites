@@ -1,5 +1,5 @@
 .main {
-    padding: 0 10px;
+    // padding: 0 10px;
 }
 
 .main__present-page {
@@ -33,4 +33,10 @@ section {
     .present-page__image {
         display: none;
     }
+}
+
+@media (max-width: 700px) {
+	.present-page__left-side {
+		min-width: 100%;
+	}
 }

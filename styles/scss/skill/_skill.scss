@@ -84,9 +84,31 @@ $time_anim: .3s;
 @media (max-width: 850px) {
 	.skills__inner {
 		flex-wrap: wrap;
-		.skills__description {
-			margin-top: 50px;
-			width: 70%;
+	}
+	.skills__description {
+		margin-top: 50px;
+		width: 70%;
+	}
+}
+
+@media (max-width: 700px) {
+	.skills__inner { 
+		margin-top: 20px;
+	}
+	.skills__list {
+		overflow: auto;
+		width: calc(100% + 40px);
+		min-width: calc(100% + 40px);
+		padding-top: 70px;
+		padding-left: 40px;
+		margin-left: -40px;
+	}
+	.skills__item {
+		&:not(:last-child) {
+			margin-right: 20px;
 		}
+	}
+	.skills__description {
+		width: 100%;
 	}
 }
